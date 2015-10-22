@@ -17,6 +17,8 @@
 		C9B070B01BD943F600A8DD1C /* FruitsMachinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B070AF1BD943F600A8DD1C /* FruitsMachinePresenter.swift */; };
 		C9B070B31BD9441A00A8DD1C /* FruitsMachinePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B070B21BD9441A00A8DD1C /* FruitsMachinePresenterProtocol.swift */; };
 		C9B070B51BD9445D00A8DD1C /* FruitsMachineViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B070B41BD9445D00A8DD1C /* FruitsMachineViewControllerProtocol.swift */; };
+		C9B070B81BD947A400A8DD1C /* GetAllFruitsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B070B71BD947A400A8DD1C /* GetAllFruitsInteractor.swift */; };
+		C9B070BC1BD9482B00A8DD1C /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B070BB1BD9482B00A8DD1C /* Fruit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		C9B070AF1BD943F600A8DD1C /* FruitsMachinePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsMachinePresenter.swift; sourceTree = "<group>"; };
 		C9B070B21BD9441A00A8DD1C /* FruitsMachinePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsMachinePresenterProtocol.swift; sourceTree = "<group>"; };
 		C9B070B41BD9445D00A8DD1C /* FruitsMachineViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsMachineViewControllerProtocol.swift; sourceTree = "<group>"; };
+		C9B070B71BD947A400A8DD1C /* GetAllFruitsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllFruitsInteractor.swift; sourceTree = "<group>"; };
+		C9B070BB1BD9482B00A8DD1C /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				C9B0708C1BD939F900A8DD1C /* AppDelegate.swift */,
-				C9B0708E1BD939F900A8DD1C /* ViewController.swift */,
+				C9B070B91BD947C900A8DD1C /* Domain */,
+				C9B070BD1BD9493800A8DD1C /* ViewControllers */,
 				C9B070901BD939F900A8DD1C /* Main.storyboard */,
 				C9B070931BD939F900A8DD1C /* Assets.xcassets */,
 				C9B070951BD939F900A8DD1C /* LaunchScreen.storyboard */,
@@ -114,6 +119,39 @@
 				C9B070AF1BD943F600A8DD1C /* FruitsMachinePresenter.swift */,
 			);
 			name = FruitsMachinePresenter;
+			sourceTree = "<group>";
+		};
+		C9B070B61BD9478800A8DD1C /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				C9B070B71BD947A400A8DD1C /* GetAllFruitsInteractor.swift */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		C9B070B91BD947C900A8DD1C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C9B070BA1BD947D100A8DD1C /* Models */,
+				C9B070B61BD9478800A8DD1C /* Interactors */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		C9B070BA1BD947D100A8DD1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9B070BB1BD9482B00A8DD1C /* Fruit.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C9B070BD1BD9493800A8DD1C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9B0708E1BD939F900A8DD1C /* ViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +258,9 @@
 			files = (
 				C9B070B01BD943F600A8DD1C /* FruitsMachinePresenter.swift in Sources */,
 				C9B070B51BD9445D00A8DD1C /* FruitsMachineViewControllerProtocol.swift in Sources */,
+				C9B070B81BD947A400A8DD1C /* GetAllFruitsInteractor.swift in Sources */,
 				C9B0708F1BD939F900A8DD1C /* ViewController.swift in Sources */,
+				C9B070BC1BD9482B00A8DD1C /* Fruit.swift in Sources */,
 				C9B0708D1BD939F900A8DD1C /* AppDelegate.swift in Sources */,
 				C9B070B31BD9441A00A8DD1C /* FruitsMachinePresenterProtocol.swift in Sources */,
 			);
