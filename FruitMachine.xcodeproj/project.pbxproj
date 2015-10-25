@@ -26,6 +26,8 @@
 		C9D1AF851BDD2C190062B809 /* JSONSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF841BDD2C190062B809 /* JSONSourceProtocol.swift */; };
 		C9D1AF881BDD2DEC0062B809 /* FruitBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF871BDD2DEC0062B809 /* FruitBuilder.swift */; };
 		C9D1AF8A1BDD2E730062B809 /* FruitsJSONSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF891BDD2E730062B809 /* FruitsJSONSource.swift */; };
+		C9D1AF8C1BDD78890062B809 /* FruitMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF8B1BDD78890062B809 /* FruitMachine.swift */; };
+		C9D1AF8F1BDD7AA40062B809 /* Array+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF8E1BDD7AA40062B809 /* Array+Sample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		C9D1AF841BDD2C190062B809 /* JSONSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSourceProtocol.swift; sourceTree = "<group>"; };
 		C9D1AF871BDD2DEC0062B809 /* FruitBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitBuilder.swift; sourceTree = "<group>"; };
 		C9D1AF891BDD2E730062B809 /* FruitsJSONSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsJSONSource.swift; sourceTree = "<group>"; };
+		C9D1AF8B1BDD78890062B809 /* FruitMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitMachine.swift; sourceTree = "<group>"; };
+		C9D1AF8E1BDD7AA40062B809 /* Array+Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Sample.swift"; sourceTree = "<group>"; };
 		D98F56C708B59D53AC943DA5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,12 +131,13 @@
 		C9B0708B1BD939F900A8DD1C /* FruitMachine */ = {
 			isa = PBXGroup;
 			children = (
+				C9D1AF8D1BDD7A800062B809 /* Extensions */,
 				C9B0708C1BD939F900A8DD1C /* AppDelegate.swift */,
 				C9B070B91BD947C900A8DD1C /* Domain */,
 				C9B070BD1BD9493800A8DD1C /* ViewControllers */,
 				C9B070BF1BD94B1900A8DD1C /* Resources */,
 				C9B070BE1BD94B0E00A8DD1C /* Misc */,
-				C9B070B11BD943FB00A8DD1C /* FruitsMachinePresenter */,
+				C9B070B11BD943FB00A8DD1C /* Presenters */,
 			);
 			path = FruitMachine;
 			sourceTree = "<group>";
@@ -147,14 +152,14 @@
 			path = FruitMachineTests;
 			sourceTree = "<group>";
 		};
-		C9B070B11BD943FB00A8DD1C /* FruitsMachinePresenter */ = {
+		C9B070B11BD943FB00A8DD1C /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
 				C9B070B41BD9445D00A8DD1C /* FruitsMachineViewControllerProtocol.swift */,
 				C9B070B21BD9441A00A8DD1C /* FruitsMachinePresenterProtocol.swift */,
 				C9B070AF1BD943F600A8DD1C /* FruitsMachinePresenter.swift */,
 			);
-			name = FruitsMachinePresenter;
+			name = Presenters;
 			sourceTree = "<group>";
 		};
 		C9B070B61BD9478800A8DD1C /* Interactors */ = {
@@ -195,7 +200,7 @@
 		C9B070BE1BD94B0E00A8DD1C /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				C9B070C01BD94B4300A8DD1C /* InfiteScrollPickerViewDelegate.swift */,
+				C9D1AF8B1BDD78890062B809 /* FruitMachine.swift */,
 			);
 			name = Misc;
 			sourceTree = "<group>";
@@ -228,6 +233,14 @@
 				C9D1AF891BDD2E730062B809 /* FruitsJSONSource.swift */,
 			);
 			name = Instrastructure;
+			sourceTree = "<group>";
+		};
+		C9D1AF8D1BDD7A800062B809 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9D1AF8E1BDD7AA40062B809 /* Array+Sample.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,8 +398,8 @@
 			files = (
 				C9B070B01BD943F600A8DD1C /* FruitsMachinePresenter.swift in Sources */,
 				C9D1AF8A1BDD2E730062B809 /* FruitsJSONSource.swift in Sources */,
-				C9B070C11BD94B4300A8DD1C /* InfiteScrollPickerViewDelegate.swift in Sources */,
 				C9B070B51BD9445D00A8DD1C /* FruitsMachineViewControllerProtocol.swift in Sources */,
+				C9D1AF8C1BDD78890062B809 /* FruitMachine.swift in Sources */,
 				C9D1AF881BDD2DEC0062B809 /* FruitBuilder.swift in Sources */,
 				C9B070B81BD947A400A8DD1C /* GetAllFruitsInteractor.swift in Sources */,
 				C9B0708F1BD939F900A8DD1C /* ViewController.swift in Sources */,
@@ -395,6 +408,7 @@
 				C9B0708D1BD939F900A8DD1C /* AppDelegate.swift in Sources */,
 				C9D1AF851BDD2C190062B809 /* JSONSourceProtocol.swift in Sources */,
 				C9B070B31BD9441A00A8DD1C /* FruitsMachinePresenterProtocol.swift in Sources */,
+				C9D1AF8F1BDD7AA40062B809 /* Array+Sample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,16 +7,32 @@
 //
 
 class FruitMachinePresenter : FruitsMachinePresenterProtocol {
+    let fruitMachine: FruitMachine
+    let interactor: GetAllFruitsInteractor
+    init(fruitMachine: FruitMachine, fruitsInteractor: GetAllFruitsInteractor) {
+        self.fruitMachine = fruitMachine
+        self.interactor = fruitsInteractor
+    }
+    
     var view: FruitsMachineViewControllerProtocol?
     func setViewController(view: FruitsMachineViewControllerProtocol) {
         self.view = view
     }
     
     func setup() {
+        do {
+            try self.interactor.execute()
+        } catch let error {
+            view?.displayError(error)
+        }
         
+        if let fruits = self.interactor.output {
+            self.fruitMachine.fruits = fruits
+            view?.displayMachineState(self.fruitMachine.getNextState(), animated: false)
+        }
     }
     
-    func startRolling() {
-        
+    func roll() {
+        view?.displayMachineState(self.fruitMachine.getNextState(), animated: true)
     }
 }

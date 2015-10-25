@@ -7,7 +7,6 @@
 //
 
 protocol FruitsMachineViewControllerProtocol {
-    func displayMachineWithFruits()
-    func animateMachine()
-    func stopMachineAtResult()
+    func displayMachineState(state: AnyObject, animated: Bool)
+    func displayError(error: ErrorType)
 }

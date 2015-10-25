@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController, FruitsMachineViewControllerProtocol {
-    let presenter: FruitsMachinePresenterProtocol = FruitMachinePresenter()
+    @IBOutlet weak var pickerView: UIPickerView?
+    
+    let presenter: FruitsMachinePresenterProtocol =
+        FruitMachinePresenter(fruitMachine: FruitMachine(), fruitsInteractor: GetAllFruitsInteractor(source: FruitsJSONSource(), builder: FruitBuilder()))
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,21 +23,17 @@ class ViewController: UIViewController, FruitsMachineViewControllerProtocol {
     // MARK: Actions
     
     @IBAction func startMachine() {
-        self.presenter.startRolling()
+        self.presenter.roll()
     }
     
     // MARK: FruitsMachineViewControllerProtocol
 
-    func displayMachineWithFruits() {
+    func displayMachineState(state: AnyObject, animated: Bool) {
         
     }
     
-    func animateMachine() {
-        
-    }
-    
-    func stopMachineAtResult() {
-        
+    func displayError(error: ErrorType) {
+        print(error)
     }
 }
 

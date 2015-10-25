@@ -9,5 +9,5 @@
 protocol FruitsMachinePresenterProtocol {
     func setViewController(view: FruitsMachineViewControllerProtocol)
     func setup()
-    func startRolling()
+    func roll()
 }

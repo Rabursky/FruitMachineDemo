@@ -16,12 +16,53 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rd-BL-cKA">
+                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                                <animations/>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="paG-b3-u1c">
+                                <rect key="frame" x="0.0" y="416" width="600" height="184"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipg-WS-ucO">
+                                        <rect key="frame" x="265" y="74" width="71" height="36"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="START!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startMachine" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wny-UP-hLZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ipg-WS-ucO" firstAttribute="centerY" secondItem="paG-b3-u1c" secondAttribute="centerY" id="It7-Lf-VVa"/>
+                                    <constraint firstItem="Ipg-WS-ucO" firstAttribute="centerX" secondItem="paG-b3-u1c" secondAttribute="centerX" id="kq0-jD-nq0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="paG-b3-u1c" firstAttribute="top" secondItem="7rd-BL-cKA" secondAttribute="bottom" constant="8" id="3us-kh-hAL"/>
+                            <constraint firstAttribute="trailing" secondItem="paG-b3-u1c" secondAttribute="trailing" id="QSc-23-irk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="paG-b3-u1c" secondAttribute="bottom" id="Qv9-Kj-Me6"/>
+                            <constraint firstAttribute="trailing" secondItem="7rd-BL-cKA" secondAttribute="trailing" id="RfI-ql-KVM"/>
+                            <constraint firstItem="7rd-BL-cKA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TWJ-0S-b5A"/>
+                            <constraint firstItem="paG-b3-u1c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="it7-4j-7Zo"/>
+                            <constraint firstItem="7rd-BL-cKA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nsw-qk-9fo"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="7rd-BL-cKA" id="YA8-x1-T7T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="497" y="479"/>
         </scene>
     </scenes>
 </document>
