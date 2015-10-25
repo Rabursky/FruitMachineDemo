@@ -20,10 +20,6 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rd-BL-cKA">
                                 <rect key="frame" x="0.0" y="192" width="600" height="216"/>
                                 <animations/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="FDh-q6-S2G"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6j0-dy-2QL"/>
-                                </connections>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="paG-b3-u1c">
                                 <rect key="frame" x="0.0" y="416" width="600" height="184"/>
