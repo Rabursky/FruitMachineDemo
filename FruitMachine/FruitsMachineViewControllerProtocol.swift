@@ -7,6 +7,6 @@
 //
 
 protocol FruitsMachineViewControllerProtocol {
-    func displayMachineState(state: AnyObject, animated: Bool)
+    func displayMachineState(state: [MachineStateRow], animated: Bool)
     func displayError(error: ErrorType)
 }

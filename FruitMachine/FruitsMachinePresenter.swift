@@ -27,7 +27,7 @@ class FruitMachinePresenter : FruitsMachinePresenterProtocol {
         }
         
         if let fruits = self.interactor.output {
-            self.fruitMachine.fruits = fruits
+            self.fruitMachine.configure(fruits)
             view?.displayMachineState(self.fruitMachine.getNextState(), animated: false)
         }
     }

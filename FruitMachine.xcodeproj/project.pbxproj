@@ -28,6 +28,7 @@
 		C9D1AF8A1BDD2E730062B809 /* FruitsJSONSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF891BDD2E730062B809 /* FruitsJSONSource.swift */; };
 		C9D1AF8C1BDD78890062B809 /* FruitMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF8B1BDD78890062B809 /* FruitMachine.swift */; };
 		C9D1AF8F1BDD7AA40062B809 /* Array+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF8E1BDD7AA40062B809 /* Array+Sample.swift */; };
+		C9D1AF931BDD947B0062B809 /* Int+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF921BDD947B0062B809 /* Int+Random.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		C9D1AF891BDD2E730062B809 /* FruitsJSONSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsJSONSource.swift; sourceTree = "<group>"; };
 		C9D1AF8B1BDD78890062B809 /* FruitMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitMachine.swift; sourceTree = "<group>"; };
 		C9D1AF8E1BDD7AA40062B809 /* Array+Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Sample.swift"; sourceTree = "<group>"; };
+		C9D1AF921BDD947B0062B809 /* Int+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
 		D98F56C708B59D53AC943DA5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				C9D1AF8E1BDD7AA40062B809 /* Array+Sample.swift */,
+				C9D1AF921BDD947B0062B809 /* Int+Random.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				C9B070B81BD947A400A8DD1C /* GetAllFruitsInteractor.swift in Sources */,
 				C9B0708F1BD939F900A8DD1C /* ViewController.swift in Sources */,
 				C9B070BC1BD9482B00A8DD1C /* Fruit.swift in Sources */,
+				C9D1AF931BDD947B0062B809 /* Int+Random.swift in Sources */,
 				C9D1AF811BDD2AF00062B809 /* ModelBuilder.swift in Sources */,
 				C9B0708D1BD939F900A8DD1C /* AppDelegate.swift in Sources */,
 				C9D1AF851BDD2C190062B809 /* JSONSourceProtocol.swift in Sources */,
