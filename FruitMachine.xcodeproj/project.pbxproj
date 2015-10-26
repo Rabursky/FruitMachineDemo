@@ -27,7 +27,6 @@
 		C9D1AF881BDD2DEC0062B809 /* FruitBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF871BDD2DEC0062B809 /* FruitBuilder.swift */; };
 		C9D1AF8A1BDD2E730062B809 /* FruitsJSONSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF891BDD2E730062B809 /* FruitsJSONSource.swift */; };
 		C9D1AF8C1BDD78890062B809 /* FruitMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF8B1BDD78890062B809 /* FruitMachine.swift */; };
-		C9D1AF8F1BDD7AA40062B809 /* Array+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF8E1BDD7AA40062B809 /* Array+Sample.swift */; };
 		C9D1AF931BDD947B0062B809 /* Int+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF921BDD947B0062B809 /* Int+Random.swift */; };
 		C9D1AF951BDD96C80062B809 /* FruitMachinePickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D1AF941BDD96C80062B809 /* FruitMachinePickerDataSource.swift */; };
 /* End PBXBuildFile section */
@@ -68,7 +67,6 @@
 		C9D1AF871BDD2DEC0062B809 /* FruitBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitBuilder.swift; sourceTree = "<group>"; };
 		C9D1AF891BDD2E730062B809 /* FruitsJSONSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsJSONSource.swift; sourceTree = "<group>"; };
 		C9D1AF8B1BDD78890062B809 /* FruitMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitMachine.swift; sourceTree = "<group>"; };
-		C9D1AF8E1BDD7AA40062B809 /* Array+Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Sample.swift"; sourceTree = "<group>"; };
 		C9D1AF921BDD947B0062B809 /* Int+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
 		C9D1AF941BDD96C80062B809 /* FruitMachinePickerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitMachinePickerDataSource.swift; sourceTree = "<group>"; };
 		D98F56C708B59D53AC943DA5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,11 +135,10 @@
 			children = (
 				C9D1AF8D1BDD7A800062B809 /* Extensions */,
 				C9B0708C1BD939F900A8DD1C /* AppDelegate.swift */,
-				C9B070B91BD947C900A8DD1C /* Domain */,
 				C9B070BD1BD9493800A8DD1C /* ViewControllers */,
-				C9B070BF1BD94B1900A8DD1C /* Resources */,
-				C9B070BE1BD94B0E00A8DD1C /* Misc */,
 				C9B070B11BD943FB00A8DD1C /* Presenters */,
+				C9B070B91BD947C900A8DD1C /* Domain */,
+				C9B070BF1BD94B1900A8DD1C /* Resources */,
 			);
 			path = FruitMachine;
 			sourceTree = "<group>";
@@ -177,6 +174,7 @@
 		C9B070B91BD947C900A8DD1C /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C9B070BE1BD94B0E00A8DD1C /* Misc */,
 				C9D1AF861BDD2C4C0062B809 /* Instrastructure */,
 				C9D1AF7F1BDD2AE80062B809 /* Builder */,
 				C9B070BA1BD947D100A8DD1C /* Models */,
@@ -243,7 +241,6 @@
 		C9D1AF8D1BDD7A800062B809 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C9D1AF8E1BDD7AA40062B809 /* Array+Sample.swift */,
 				C9D1AF921BDD947B0062B809 /* Int+Random.swift */,
 			);
 			name = Extensions;
@@ -416,7 +413,6 @@
 				C9B0708D1BD939F900A8DD1C /* AppDelegate.swift in Sources */,
 				C9D1AF851BDD2C190062B809 /* JSONSourceProtocol.swift in Sources */,
 				C9B070B31BD9441A00A8DD1C /* FruitsMachinePresenterProtocol.swift in Sources */,
-				C9D1AF8F1BDD7AA40062B809 /* Array+Sample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +548,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = FruitMachine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rzeczy.FruitMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -568,6 +565,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = FruitMachine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rzeczy.FruitMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";

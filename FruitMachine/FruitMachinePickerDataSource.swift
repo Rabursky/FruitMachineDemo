@@ -55,11 +55,13 @@ import UIKit
         return fruit.name
     }
     
+    // For some reasone pickerView is not providing resuingView anytime, 
+    // hence forcing allocation of new ImageViews every time, and making it very glitchy
+    
 //    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
 //        let fruit = machineStateRows[component].items[row % 4]
 //        let image = UIImage(named: fruit.imageName)
-//        
-//        // for some reason PickerView is not reusing any views hence the performance issue
+//
 //        let imageView = view as? UIImageView ?? UIImageView()
 //        imageView.frame = CGRectMake(0, 0, pickerView.rowSizeForComponent(component).width, self.rowHeightForPickerView(pickerView))
 //        imageView.image = image
