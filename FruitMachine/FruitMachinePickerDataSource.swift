@@ -51,7 +51,7 @@ import UIKit
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        let fruit = machineStateRows[component].items[row % 4]
+        let fruit = machineStateRows[component].items[row % machineStateRows[component].items.count]
         return fruit.name
     }
     
