@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,15 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rd-BL-cKA">
-                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rd-BL-cKA">
+                                <rect key="frame" x="0.0" y="102" width="600" height="216"/>
                                 <animations/>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="paG-b3-u1c">
-                                <rect key="frame" x="0.0" y="416" width="600" height="184"/>
+                                <rect key="frame" x="0.0" y="326" width="600" height="274"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipg-WS-ucO">
-                                        <rect key="frame" x="265" y="74" width="71" height="36"/>
+                                        <rect key="frame" x="265" y="92" width="71" height="36"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="START!">
@@ -39,7 +40,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="Ipg-WS-ucO" firstAttribute="centerY" secondItem="paG-b3-u1c" secondAttribute="centerY" id="It7-Lf-VVa"/>
+                                    <constraint firstItem="Ipg-WS-ucO" firstAttribute="centerY" secondItem="paG-b3-u1c" secondAttribute="centerY" multiplier="0.8" id="It7-Lf-VVa"/>
                                     <constraint firstItem="Ipg-WS-ucO" firstAttribute="centerX" secondItem="paG-b3-u1c" secondAttribute="centerX" id="kq0-jD-nq0"/>
                                 </constraints>
                             </view>
@@ -53,7 +54,7 @@
                             <constraint firstAttribute="trailing" secondItem="7rd-BL-cKA" secondAttribute="trailing" id="RfI-ql-KVM"/>
                             <constraint firstItem="7rd-BL-cKA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TWJ-0S-b5A"/>
                             <constraint firstItem="paG-b3-u1c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="it7-4j-7Zo"/>
-                            <constraint firstItem="7rd-BL-cKA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nsw-qk-9fo"/>
+                            <constraint firstItem="7rd-BL-cKA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.7" id="nsw-qk-9fo"/>
                         </constraints>
                     </view>
                     <connections>

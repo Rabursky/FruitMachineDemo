@@ -33,6 +33,23 @@ class FruitMachinePresenter : FruitsMachinePresenterProtocol {
     }
     
     func roll() {
-        view?.displayMachineState(self.fruitMachine.getNextState(), animated: true)
+        let nextState = self.fruitMachine.getNextState()
+        view?.displayMachineState(nextState, animated: true)
+        if let fruit = winningFruit(nextState) {
+            view?.displayWin(fruit)
+        }
+    }
+    
+    func winningFruit(state: [MachineStateRow]) -> Fruit? {
+        var fruit: Fruit?
+        for row in state {
+            let rowFruit = row.items[row.selectedIndex]
+            if fruit == nil {
+                fruit = rowFruit
+            } else if fruit != rowFruit {
+                return nil
+            }
+        }
+        return fruit
     }
 }
