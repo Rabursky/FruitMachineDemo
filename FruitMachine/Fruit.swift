@@ -14,3 +14,8 @@ class Fruit {
         self.imageName = imageName
     }
 }
+
+extension Fruit: Equatable {}
+func ==(lhs: Fruit, rhs: Fruit) -> Bool {
+    return lhs.name == rhs.name && lhs.imageName == rhs.imageName
+}
